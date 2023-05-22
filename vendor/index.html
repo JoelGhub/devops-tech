@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoelOpsTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-900 py-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-3xl">JoelOpsTech</h1>
+            <ul class="flex space-x-4 text-white">
+                <li><a href="/about.html">Acerca de</a></li>
+                <li><a href="/services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-gradient-to-b from-blue-500 to-blue-700 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Bienvenido a Mi Servicio DevOps</h2>
+            <p class="text-lg mb-8">Brindando soluciones de infraestructura y despliegue en la nube.</p>
+            <a href="#contact" class="bg-white text-blue-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 hover:text-white transition-colors duration-300">Contáctame</a>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Acerca de</h2>
+            <p class="text-lg mb-8">Descripción de tu experiencia y habilidades en DevOps.</p>
+        </div>
+    </section>
+
+    <section id="services" class="bg-gray-100 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Servicios</h2>
+            <ul class="text-lg list-disc list-inside mb-8">
+                <li>Despliegue y gestión de aplicaciones en la nube</li>
+                <li>Automatización de infraestructura y configuración</li>
+                <li>Implementación de prácticas de CI/CD</li>
+                <li>Monitoreo y escalado de aplicaciones</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Contacto</h2>
+            <p class="text-lg mb-8">¡Déjame un mensaje y me pondré en contacto contigo lo antes posible!</p>
+            <form class="mx-auto max-w-sm">
+                <div class="mb-4">
+                    <input type="text" placeholder="Nombre" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Correo electrónico" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Mensaje" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition-colors duration-300">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-6 text-white text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2023 JoelOpsTech. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

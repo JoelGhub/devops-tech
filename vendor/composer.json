@@ -1,0 +1,11 @@
+{
+    "name": "jfont/devops",
+    "autoload": {
+        "psr-4": {
+            "Jfont\\Devops\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    }
+}
