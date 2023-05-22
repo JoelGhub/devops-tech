@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-900 py-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-3xl">Mi Servicio DevOps</h1>
+            <ul class="flex space-x-4 text-white">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/about.html">Acerca de</a></li>
+                <li><a href="services.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-8">Contacto</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <img src="contact-image.jpg" alt="Contacto" class="rounded-lg">
+                </div>
+                <div>
+                    <form class="max-w-sm mx-auto" action="contact.php" method="POST">
+                        <!-- ... Código HTML anterior ... -->
+
+                        <div class="mb-4">
+                            <label for="nombre" class="text-gray-700">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="text-gray-700">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="Correo electrónico" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensaje" class="text-gray-700">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-500 text-white px-6 py-3 rounded-md font-bold text-lg hover:bg-blue-700 transition-colors duration-300">Enviar</button>
+
+                        <!-- ... Código HTML posterior ... -->
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-6 text-white text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Mi Servicio DevOps. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
