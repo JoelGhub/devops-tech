@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         $mail->setFrom($email, $nombre);
-        $mail->addAddress('font.joel@gmail.com'); // Reemplaza con tu dirección de correo
+        $mail->addAddress($correo); // Reemplaza con tu dirección de correo
 
         $mail->isHTML(false);
         $mail->Subject = 'Nuevo mensaje de contacto';
