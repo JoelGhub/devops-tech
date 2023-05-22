@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+require_once 'config.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -22,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'font.joel@gmail.com'; // Reemplaza con tu dirección de correo
-        $mail->Password = 'joel9655'; // Reemplaza con tu contraseña de correo
+	$mail->Username = $correo;
+	$mail->Password = $contrasena;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
